@@ -66,8 +66,23 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
             
             return cell
             
+        
             
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let item = arrayOfItems[indexPath.row]
+        
+        var detailedViewController: DetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController") as DetailViewController
+        
+        detailedViewController.itemString = item.name
+        detailedViewController.myDetailedImageName = item.imageName
+       
+        
+        self.presentViewController(detailedViewController, animated: true, completion: nil)
+    
+    }
+    
 }
 
 

@@ -17,6 +17,7 @@
 		B446AE291A1A9059007F3CD7 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE281A1A9059007F3CD7 /* item.swift */; };
 		B446AE2C1A1A92C8007F3CD7 /* wat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */; };
 		B446AE2D1A1A92C8007F3CD7 /* wat2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */; };
+		B446AE2F1A1AA6CF007F3CD7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE2E1A1AA6CF007F3CD7 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B446AE281A1A9059007F3CD7 /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 		B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wat.jpeg; sourceTree = "<group>"; };
 		B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wat2.jpeg; sourceTree = "<group>"; };
+		B446AE2E1A1AA6CF007F3CD7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		B446AE011A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */ = {
 			isa = PBXGroup;
 			children = (
+				B446AE2E1A1AA6CF007F3CD7 /* DetailViewController.swift */,
 				B446AE281A1A9059007F3CD7 /* item.swift */,
 				B446AE261A1A8D86007F3CD7 /* CustomCell.swift */,
 				B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */,
@@ -228,6 +231,7 @@
 			files = (
 				B446AE291A1A9059007F3CD7 /* item.swift in Sources */,
 				B446AE071A1A8B2E007F3CD7 /* ViewController.swift in Sources */,
+				B446AE2F1A1AA6CF007F3CD7 /* DetailViewController.swift in Sources */,
 				B446AE271A1A8D86007F3CD7 /* CustomCell.swift in Sources */,
 				B446AE051A1A8B2E007F3CD7 /* AppDelegate.swift in Sources */,
 			);
