@@ -13,6 +13,10 @@
 		B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B446AE0B1A1A8B2E007F3CD7 /* Images.xcassets */; };
 		B446AE0F1A1A8B2E007F3CD7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B446AE0D1A1A8B2E007F3CD7 /* LaunchScreen.xib */; };
 		B446AE1B1A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE1A1A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.swift */; };
+		B446AE271A1A8D86007F3CD7 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE261A1A8D86007F3CD7 /* CustomCell.swift */; };
+		B446AE291A1A9059007F3CD7 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE281A1A9059007F3CD7 /* item.swift */; };
+		B446AE2C1A1A92C8007F3CD7 /* wat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */; };
+		B446AE2D1A1A92C8007F3CD7 /* wat2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		B446AE141A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThaiBuddyGuide2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B446AE191A1A8B2E007F3CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B446AE1A1A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiBuddyGuide2Tests.swift; sourceTree = "<group>"; };
+		B446AE261A1A8D86007F3CD7 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		B446AE281A1A9059007F3CD7 /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wat.jpeg; sourceTree = "<group>"; };
+		B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wat2.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +85,13 @@
 		B446AE011A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */ = {
 			isa = PBXGroup;
 			children = (
+				B446AE281A1A9059007F3CD7 /* item.swift */,
+				B446AE261A1A8D86007F3CD7 /* CustomCell.swift */,
 				B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */,
 				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
 				B446AE081A1A8B2E007F3CD7 /* Main.storyboard */,
+				B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */,
+				B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */,
 				B446AE0B1A1A8B2E007F3CD7 /* Images.xcassets */,
 				B446AE0D1A1A8B2E007F3CD7 /* LaunchScreen.xib */,
 				B446AE021A1A8B2E007F3CD7 /* Supporting Files */,
@@ -192,6 +204,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B446AE2C1A1A92C8007F3CD7 /* wat.jpeg in Resources */,
+				B446AE2D1A1A92C8007F3CD7 /* wat2.jpeg in Resources */,
 				B446AE0A1A1A8B2E007F3CD7 /* Main.storyboard in Resources */,
 				B446AE0F1A1A8B2E007F3CD7 /* LaunchScreen.xib in Resources */,
 				B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */,
@@ -212,7 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B446AE291A1A9059007F3CD7 /* item.swift in Sources */,
 				B446AE071A1A8B2E007F3CD7 /* ViewController.swift in Sources */,
+				B446AE271A1A8D86007F3CD7 /* CustomCell.swift in Sources */,
 				B446AE051A1A8B2E007F3CD7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
