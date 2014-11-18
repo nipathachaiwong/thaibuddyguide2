@@ -18,6 +18,12 @@
 		B446AE2C1A1A92C8007F3CD7 /* wat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */; };
 		B446AE2D1A1A92C8007F3CD7 /* wat2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */; };
 		B446AE2F1A1AA6CF007F3CD7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE2E1A1AA6CF007F3CD7 /* DetailViewController.swift */; };
+		B4E3E6861A1B3A9800E84243 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6841A1B3A9800E84243 /* ENSideMenu.swift */; };
+		B4E3E6871A1B3A9800E84243 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6851A1B3A9800E84243 /* ENSideMenuNavigationController.swift */; };
+		B4E3E6891A1B3C7800E84243 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6881A1B3C7800E84243 /* MyNavigationController.swift */; };
+		B4E3E68C1A1B3D0400E84243 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E68B1A1B3D0400E84243 /* MyMenuTableViewController.swift */; };
+		B4E3E68E1A1B3E9900E84243 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = B4E3E68D1A1B3E9900E84243 /* image.png */; };
+		B4E3E6931A1B425E00E84243 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6921A1B425E00E84243 /* ItemsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wat.jpeg; sourceTree = "<group>"; };
 		B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wat2.jpeg; sourceTree = "<group>"; };
 		B446AE2E1A1AA6CF007F3CD7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B4E3E6841A1B3A9800E84243 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
+		B4E3E6851A1B3A9800E84243 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		B4E3E6881A1B3C7800E84243 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationController.swift; path = ../MyNavigationController.swift; sourceTree = "<group>"; };
+		B4E3E68B1A1B3D0400E84243 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMenuTableViewController.swift; path = ../MyMenuTableViewController.swift; sourceTree = "<group>"; };
+		B4E3E68D1A1B3E9900E84243 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		B4E3E6921A1B425E00E84243 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,13 +99,12 @@
 		B446AE011A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */ = {
 			isa = PBXGroup;
 			children = (
-				B446AE2E1A1AA6CF007F3CD7 /* DetailViewController.swift */,
-				B446AE281A1A9059007F3CD7 /* item.swift */,
-				B446AE261A1A8D86007F3CD7 /* CustomCell.swift */,
+				B4E3E68F1A1B406600E84243 /* tableview */,
 				B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */,
 				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
 				B446AE081A1A8B2E007F3CD7 /* Main.storyboard */,
 				B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */,
+				B4E3E68A1A1B3CC200E84243 /* SideBar */,
 				B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */,
 				B446AE0B1A1A8B2E007F3CD7 /* Images.xcassets */,
 				B446AE0D1A1A8B2E007F3CD7 /* LaunchScreen.xib */,
@@ -125,6 +136,29 @@
 				B446AE191A1A8B2E007F3CD7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4E3E68A1A1B3CC200E84243 /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3E6851A1B3A9800E84243 /* ENSideMenuNavigationController.swift */,
+				B4E3E6841A1B3A9800E84243 /* ENSideMenu.swift */,
+				B4E3E6881A1B3C7800E84243 /* MyNavigationController.swift */,
+				B4E3E68B1A1B3D0400E84243 /* MyMenuTableViewController.swift */,
+				B4E3E68D1A1B3E9900E84243 /* image.png */,
+			);
+			name = SideBar;
+			sourceTree = "<group>";
+		};
+		B4E3E68F1A1B406600E84243 /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3E6921A1B425E00E84243 /* ItemsViewController.swift */,
+				B446AE261A1A8D86007F3CD7 /* CustomCell.swift */,
+				B446AE2E1A1AA6CF007F3CD7 /* DetailViewController.swift */,
+				B446AE281A1A9059007F3CD7 /* item.swift */,
+			);
+			name = tableview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +246,7 @@
 				B446AE0A1A1A8B2E007F3CD7 /* Main.storyboard in Resources */,
 				B446AE0F1A1A8B2E007F3CD7 /* LaunchScreen.xib in Resources */,
 				B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */,
+				B4E3E68E1A1B3E9900E84243 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,8 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E3E6861A1B3A9800E84243 /* ENSideMenu.swift in Sources */,
+				B4E3E6891A1B3C7800E84243 /* MyNavigationController.swift in Sources */,
 				B446AE291A1A9059007F3CD7 /* item.swift in Sources */,
 				B446AE071A1A8B2E007F3CD7 /* ViewController.swift in Sources */,
+				B4E3E68C1A1B3D0400E84243 /* MyMenuTableViewController.swift in Sources */,
+				B4E3E6931A1B425E00E84243 /* ItemsViewController.swift in Sources */,
+				B4E3E6871A1B3A9800E84243 /* ENSideMenuNavigationController.swift in Sources */,
 				B446AE2F1A1AA6CF007F3CD7 /* DetailViewController.swift in Sources */,
 				B446AE271A1A8D86007F3CD7 /* CustomCell.swift in Sources */,
 				B446AE051A1A8B2E007F3CD7 /* AppDelegate.swift in Sources */,
@@ -425,6 +465,7 @@
 				B446AE201A1A8B2E007F3CD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B446AE211A1A8B2E007F3CD7 /* Build configuration list for PBXNativeTarget "ThaiBuddyGuide2Tests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +474,7 @@
 				B446AE231A1A8B2E007F3CD7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

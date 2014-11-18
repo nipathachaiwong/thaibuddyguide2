@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ItemsViewController.swift
 //  ThaiBuddyGuide2
 //
 //  Created by Thai Buddy on 11/18/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
+class ItemsViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
     
     @IBOutlet weak var myTableView: UITableView!
     var arrayOfItems : [Item] = [Item]()
@@ -20,13 +20,14 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         
         self.myTableView.delegate = self
         self.myTableView.dataSource = self
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     func setUpItems()
     {
         var item1 = Item(name: "temple1", imageName: "wat.jpeg")
@@ -38,36 +39,36 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     }
     
     
-        
-        func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
-        {
-            return arrayOfItems.count
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return arrayOfItems.count
     }
+    
+    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let cell: CustomCell = tableView.dequeueReusableCellWithIdentifier("cell") as CustomCell
         
-        // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-        // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-        
-        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+        if indexPath.row % 2 == 0
         {
-            let cell: CustomCell = tableView.dequeueReusableCellWithIdentifier("cell") as CustomCell
-            
-            if indexPath.row % 2 == 0
-            {
-                cell.backgroundColor = UIColor.purpleColor()
-            }
-            else
-            {
-                cell.backgroundColor = UIColor.orangeColor()
-            }
-            
-            let item = arrayOfItems[indexPath.row]
-            
-            cell.setCell(item.name, imageName: item.imageName)
-            
-            return cell
-            
+            cell.backgroundColor = UIColor.purpleColor()
+        }
+        else
+        {
+            cell.backgroundColor = UIColor.orangeColor()
+        }
         
-            
+        let item = arrayOfItems[indexPath.row]
+        
+        cell.setCell(item.name, imageName: item.imageName)
+        
+        return cell
+        
+        
+        
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -77,10 +78,10 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         
         detailedViewController.itemString = item.name
         detailedViewController.myDetailedImageName = item.imageName
-       
+        
         
         self.presentViewController(detailedViewController, animated: true, completion: nil)
-    
+        
     }
     
 }
