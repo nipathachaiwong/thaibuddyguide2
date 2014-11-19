@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailScrollVC: UIViewController {
+class DetailScrollVC: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!

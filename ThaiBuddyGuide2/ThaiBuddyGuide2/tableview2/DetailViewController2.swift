@@ -15,6 +15,9 @@ class DetailViewController2: UIViewController {
     
     @IBOutlet weak var itemLabel: UILabel!
     
+    //scrollview
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     var itemString: String?
     var myDetailedImageName: String?
     
@@ -22,10 +25,13 @@ class DetailViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.itemLabel.text = itemString
-        self.myDetailedImageView.image = UIImage(named: myDetailedImageName!)
+    self.itemLabel.text = itemString
+       self.myDetailedImageView.image = UIImage(named: myDetailedImageName!)
         
         // Do any additional setup after loading the view.
+        
+        //scroll
+         scrollView.contentSize = CGSize(width: CGRectGetWidth(view.bounds), height: CGRectGetHeight(view.bounds) * 1.5)
     }
 
     override func didReceiveMemoryWarning() {

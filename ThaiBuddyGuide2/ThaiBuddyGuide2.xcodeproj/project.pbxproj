@@ -129,7 +129,7 @@
 				B446AE081A1A8B2E007F3CD7 /* Main.storyboard */,
 				B46BB25E1A1D339A00D81FBE /* Main VC */,
 				B4E3E68F1A1B406600E84243 /* tableview1 */,
-				B4E3E6941A1B4F4700E84243 /* tableview2 */,
+				B4E3E6941A1B4F4700E84243 /* tableview Restaurants */,
 				B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */,
 				B4E3E68A1A1B3CC200E84243 /* SideBar */,
 				B446AE021A1A8B2E007F3CD7 /* Supporting Files */,
@@ -209,7 +209,7 @@
 			name = tableview1;
 			sourceTree = "<group>";
 		};
-		B4E3E6941A1B4F4700E84243 /* tableview2 */ = {
+		B4E3E6941A1B4F4700E84243 /* tableview Restaurants */ = {
 			isa = PBXGroup;
 			children = (
 				B4E3E69D1A1B51E600E84243 /* CustomCell2.swift */,
@@ -217,7 +217,7 @@
 				B4E3E69F1A1B51E600E84243 /* item2.swift */,
 				B4E3E6A01A1B51E600E84243 /* ItemsViewController2.swift */,
 			);
-			name = tableview2;
+			name = "tableview Restaurants";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
