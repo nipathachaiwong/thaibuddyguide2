@@ -20,6 +20,9 @@
 		B446AE2F1A1AA6CF007F3CD7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B446AE2E1A1AA6CF007F3CD7 /* DetailViewController.swift */; };
 		B4B5D3781A1C829100DEAD0F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B5D3771A1C829100DEAD0F /* MapViewController.swift */; };
 		B4B5D37A1A1C839800DEAD0F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B5D3791A1C839800DEAD0F /* MapKit.framework */; };
+		B4B5D37F1A1C893E00DEAD0F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B5D37E1A1C893E00DEAD0F /* AVFoundation.framework */; };
+		B4B5D3811A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4B5D3801A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 */; };
+		B4B5D3871A1CB50400DEAD0F /* audioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B5D3861A1CB50400DEAD0F /* audioVC.swift */; };
 		B4E3E6861A1B3A9800E84243 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6841A1B3A9800E84243 /* ENSideMenu.swift */; };
 		B4E3E6871A1B3A9800E84243 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6851A1B3A9800E84243 /* ENSideMenuNavigationController.swift */; };
 		B4E3E6891A1B3C7800E84243 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6881A1B3C7800E84243 /* MyNavigationController.swift */; };
@@ -58,8 +61,11 @@
 		B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wat.jpeg; sourceTree = "<group>"; };
 		B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wat2.jpeg; sourceTree = "<group>"; };
 		B446AE2E1A1AA6CF007F3CD7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		B4B5D3771A1C829100DEAD0F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B4B5D3771A1C829100DEAD0F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
 		B4B5D3791A1C839800DEAD0F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B4B5D37E1A1C893E00DEAD0F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B4B5D3801A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testfordirectionaduio.mp3; sourceTree = "<group>"; };
+		B4B5D3861A1CB50400DEAD0F /* audioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = audioVC.swift; path = ../audioVC.swift; sourceTree = "<group>"; };
 		B4E3E6841A1B3A9800E84243 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
 		B4E3E6851A1B3A9800E84243 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 		B4E3E6881A1B3C7800E84243 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyNavigationController.swift; path = ../MyNavigationController.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B5D37F1A1C893E00DEAD0F /* AVFoundation.framework in Frameworks */,
 				B4B5D37A1A1C839800DEAD0F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,8 +101,8 @@
 		B446ADF61A1A8B2E007F3CD7 = {
 			isa = PBXGroup;
 			children = (
+				B4B5D37E1A1C893E00DEAD0F /* AVFoundation.framework */,
 				B4B5D3791A1C839800DEAD0F /* MapKit.framework */,
-				B4B5D3771A1C829100DEAD0F /* MapViewController.swift */,
 				B446AE011A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */,
 				B446AE171A1A8B2E007F3CD7 /* ThaiBuddyGuide2Tests */,
 				B446AE001A1A8B2E007F3CD7 /* Products */,
@@ -118,6 +125,7 @@
 				B4E3E68F1A1B406600E84243 /* tableview1 */,
 				B446AE041A1A8B2E007F3CD7 /* AppDelegate.swift */,
 				B446AE061A1A8B2E007F3CD7 /* ViewController.swift */,
+				B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */,
 				B4E3E68A1A1B3CC200E84243 /* SideBar */,
 				B446AE2B1A1A92C8007F3CD7 /* wat2.jpeg */,
 				B446AE2A1A1A92C8007F3CD7 /* wat.jpeg */,
@@ -131,6 +139,7 @@
 		B446AE021A1A8B2E007F3CD7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B4B5D3801A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 */,
 				B446AE031A1A8B2E007F3CD7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -151,6 +160,15 @@
 				B446AE191A1A8B2E007F3CD7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4B5D37B1A1C86AD00DEAD0F /* DetailViewHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				B4B5D3771A1C829100DEAD0F /* MapViewController.swift */,
+				B4B5D3861A1CB50400DEAD0F /* audioVC.swift */,
+			);
+			name = DetailViewHelpers;
 			sourceTree = "<group>";
 		};
 		B4E3E68A1A1B3CC200E84243 /* SideBar */ = {
@@ -269,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B446AE2C1A1A92C8007F3CD7 /* wat.jpeg in Resources */,
+				B4B5D3811A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 in Resources */,
 				B446AE2D1A1A92C8007F3CD7 /* wat2.jpeg in Resources */,
 				B446AE0A1A1A8B2E007F3CD7 /* Main.storyboard in Resources */,
 				B446AE0F1A1A8B2E007F3CD7 /* LaunchScreen.xib in Resources */,
@@ -292,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4E3E6A41A1B51E600E84243 /* ItemsViewController2.swift in Sources */,
+				B4B5D3871A1CB50400DEAD0F /* audioVC.swift in Sources */,
 				B4E3E6A31A1B51E600E84243 /* item2.swift in Sources */,
 				B4E3E6A11A1B51E600E84243 /* CustomCell2.swift in Sources */,
 				B4E3E6861A1B3A9800E84243 /* ENSideMenu.swift in Sources */,
