@@ -20,18 +20,33 @@ class DetailViewController2: UIViewController {
     
     var itemString: String?
     var myDetailedImageName: String?
+    var desciptionString: String?
     
+    @IBOutlet weak var desciptionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    self.itemLabel.text = itemString
-       self.myDetailedImageView.image = UIImage(named: myDetailedImageName!)
+       
+        
+        self.itemLabel.text = itemString
+        self.myDetailedImageView.image = UIImage(named: myDetailedImageName!)
+        self.desciptionLabel.text = desciptionString
+        
+        desciptionLabel.sizeToFit()
+        desciptionLabel.textAlignment = NSTextAlignment.Left
+     
         
         // Do any additional setup after loading the view.
         
         //scroll
-         scrollView.contentSize = CGSize(width: CGRectGetWidth(view.bounds), height: CGRectGetHeight(view.bounds) * 1.5)
+         scrollView.contentSize = CGSize(width: desciptionLabel.frame.size.width, height: desciptionLabel.frame.size.height/2)
+        scrollView.bounces = false
+       
+      
+      
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +56,7 @@ class DetailViewController2: UIViewController {
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
     {
+        
         self.dismissViewControllerAnimated(true,completion: nil)
     }
 
