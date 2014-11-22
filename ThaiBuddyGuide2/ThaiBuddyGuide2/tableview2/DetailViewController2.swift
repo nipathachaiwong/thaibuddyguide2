@@ -33,14 +33,14 @@ class DetailViewController2: UIViewController {
         self.myDetailedImageView.image = UIImage(named: myDetailedImageName!)
         self.desciptionLabel.text = desciptionString
         
-        desciptionLabel.sizeToFit()
-        desciptionLabel.textAlignment = NSTextAlignment.Left
+        //desciptionLabel.sizeToFit()
+        //desciptionLabel.textAlignment = NSTextAlignment.Left
      
         
         // Do any additional setup after loading the view.
         
         //scroll
-         scrollView.contentSize = CGSize(width: desciptionLabel.frame.size.width, height: desciptionLabel.frame.size.height/2)
+         scrollView.contentSize = CGSize(width: desciptionLabel.frame.size.width, height: desciptionLabel.frame.size.height)
         scrollView.bounces = false
        
       

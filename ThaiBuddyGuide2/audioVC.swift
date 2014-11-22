@@ -23,7 +23,7 @@ class audioVC: UIViewController, AVAudioPlayerDelegate{
             self.audioPlayer = AVAudioPlayer(contentsOfURL: SoundUrl!, error: nil)
         }
 
-        // Do any additional setup after loading the view.
+       
     }
     @IBAction func playButton(sender: AnyObject) {
         if (self.audioPlayer != nil) {
