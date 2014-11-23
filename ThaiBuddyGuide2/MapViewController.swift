@@ -12,14 +12,34 @@ import AVFoundation
 
 
 
+
 class MapViewController: UIViewController, MKMapViewDelegate {
     
     var audioPlayer: AVAudioPlayer?
+    
+    
+//variable to get data
+     var itemNamefromDetail: String = ""
+   
+    
+    
+    
 
-
+    @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var mappy: MKMapView!
-        override func viewDidLoad() {
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // test data was sent
+        
+        println("var inside of mapview+ \(itemNamefromDetail)")
+        
+        //get text for label
+        nameLabel.text = itemNamefromDetail
+        
         
         // 1. pick a point
         var lat = 13.7334218

@@ -8,16 +8,44 @@
 
 import UIKit
 import MapKit
+import AVFoundation
+
+
+
 
 class MapViewController: UIViewController, MKMapViewDelegate {
+    
+    var audioPlayer: AVAudioPlayer?
+    
+    
+//variable to get data
+     var itemNamefromDetail: String = ""
+   
+    
+    
+    
 
+    @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var mappy: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // test data was sent
+        
+        println("var inside of mapview+ \(itemNamefromDetail)")
+        
+        //get text for label
+        nameLabel.text = itemNamefromDetail
+        
+        
         // 1. pick a point
-        var lat = 40.8206
-        var lon = -96.7056
+        var lat = 13.7334218
+        var lon = 100.6922059
+            
+            //13.7334218,100.6922059
         
         // 2. setup point
         var span : MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
@@ -34,13 +62,30 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         // 5. update zoom and add marker
         mappy.setRegion(region, animated: true)
         mappy.addAnnotation(annotation)
+        
+        // Audio of directions
+            var SoundUrl:NSURL? = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("testfordirectionaduio", ofType: "mp3")!)
+            if (SoundUrl != nil) {
+                self.audioPlayer = AVAudioPlayer(contentsOfURL: SoundUrl!, error: nil)
+            }
+
+       
     }
 
+//press for directions button
+    @IBAction func callSound(sender: AnyObject) {
+       
+        if (self.audioPlayer != nil) {
+            self.audioPlayer?.play()
+        }
+
+    }
+    
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
+   
 
     /*
     // MARK: - Navigation
@@ -52,4 +97,5 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     */
 
+}
 }

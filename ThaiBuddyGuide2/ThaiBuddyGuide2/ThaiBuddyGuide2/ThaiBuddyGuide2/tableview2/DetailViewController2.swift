@@ -33,8 +33,8 @@ class DetailViewController2: UIViewController {
         self.myDetailedImageView.image = UIImage(named: myDetailedImageName!)
         self.desciptionLabel.text = desciptionString
         
-        desciptionLabel.sizeToFit()
-        desciptionLabel.textAlignment = .Center;
+        //desciptionLabel.sizeToFit()
+        //desciptionLabel.textAlignment = NSTextAlignment.Left
      
         
         // Do any additional setup after loading the view.

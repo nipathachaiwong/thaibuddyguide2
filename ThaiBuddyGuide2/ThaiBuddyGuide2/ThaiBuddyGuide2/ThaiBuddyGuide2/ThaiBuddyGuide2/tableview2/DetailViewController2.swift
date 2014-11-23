@@ -27,11 +27,15 @@ class DetailViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
+        
         self.itemLabel.text = itemString
         self.myDetailedImageView.image = UIImage(named: myDetailedImageName!)
         self.desciptionLabel.text = desciptionString
         
-        desciptionLabel.sizeToFit()
+        //desciptionLabel.sizeToFit()
+        //desciptionLabel.textAlignment = NSTextAlignment.Left
+     
         
         // Do any additional setup after loading the view.
         
