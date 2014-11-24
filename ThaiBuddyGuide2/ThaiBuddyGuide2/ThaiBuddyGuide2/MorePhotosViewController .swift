@@ -12,6 +12,8 @@ class MorePhotosViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
+    var namePassedfromDetailView: String = ""
+    
     var images = [UIImage]()
     
     override func viewDidLoad() {

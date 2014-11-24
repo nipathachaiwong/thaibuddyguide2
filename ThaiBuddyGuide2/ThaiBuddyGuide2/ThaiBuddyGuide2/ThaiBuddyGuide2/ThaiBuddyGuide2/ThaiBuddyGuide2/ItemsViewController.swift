@@ -30,8 +30,8 @@ class ItemsViewController: UIViewController, UITableViewDataSource,UITableViewDe
     
     func setUpItems()
     {
-        var item1 = Item(name: "tableonename", imageName: "f2@2x.jpg")
-        var item2 = Item(name: "tableonename 2", imageName: "f3@2x.jpg")
+        var item1 = Item(name: "temple1", imageName: "wat.jpeg")
+        var item2 = Item(name: "temple2", imageName: "wat2.jpeg")
         
         arrayOfItems.append(item1)
         arrayOfItems.append(item2)

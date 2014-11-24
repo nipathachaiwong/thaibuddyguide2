@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oAo-ZQ-JOm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Vck-ef-RPp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -390,35 +390,6 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
             </objects>
             <point key="canvasLocation" x="-289" y="1797"/>
         </scene>
-        <!--AudioVC-->
-        <scene sceneID="Z1e-cI-XQW">
-            <objects>
-                <viewController id="9eI-Gf-qcS" customClass="audioVC" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1GB-hk-ev8"/>
-                        <viewControllerLayoutGuide type="bottom" id="No8-N6-Wvn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="w7s-3y-L4k">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smb-W4-tZu">
-                                <rect key="frame" x="58" y="45" width="214" height="89"/>
-                                <state key="normal" title="play sound">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playButton:" destination="9eI-Gf-qcS" eventType="touchUpInside" id="SFu-t5-fCj"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lzS-hJ-sdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-841" y="2975"/>
-        </scene>
         <!--More Photos-->
         <scene sceneID="CFd-co-poW">
             <objects>
@@ -450,6 +421,41 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKd-R8-cSE" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1848" y="2425"/>
+        </scene>
+        <!--Web Video View Controller-->
+        <scene sceneID="crL-kz-sqY">
+            <objects>
+                <viewController id="Vck-ef-RPp" customClass="WebVideoViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o0s-GQ-oih"/>
+                        <viewControllerLayoutGuide type="bottom" id="T3T-rT-w8f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FxP-Wl-vhf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9RG-Sb-aed">
+                                <rect key="frame" x="22" y="28" width="276" height="202"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="WebView" destination="9RG-Sb-aed" id="dWZ-FF-sA9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M33-EB-CZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1230" y="2821"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="COo-LM-1F8">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="E7d-a5-ytc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pP0-yJ-uNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-800" y="2813"/>
         </scene>
     </scenes>
     <resources>

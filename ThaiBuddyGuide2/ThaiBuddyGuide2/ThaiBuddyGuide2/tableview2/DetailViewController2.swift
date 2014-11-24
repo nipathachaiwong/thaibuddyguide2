@@ -64,12 +64,38 @@ class DetailViewController2: UIViewController {
     }
     
      override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var nextVC: MapViewController = segue.destinationViewController as MapViewController
+        //var nextVC: MapViewController = segue.destinationViewController as MapViewController
         
-        nextVC.itemNamefromDetail = itemString!
+       // nextVC.itemNamefromDetail = itemString!
+        
+        if (segue.identifier == "goToSque"){
+            var nextVC: MapViewController = segue.destinationViewController as MapViewController
+            
+            nextVC.itemNamefromDetail = itemString!
+        }
+        
+        if (segue.identifier == "MorePhotoSeque"){
+            var morePhotosObject: MorePhotosViewController = segue.destinationViewController as MorePhotosViewController
+            
+            morePhotosObject.namePassedfromDetailView = itemString!
+            
+            
+        }
+        
+        }
+    @IBAction func morePhotoButton(sender: AnyObject) {
+    }
     }
 
 
+
+
+
+
+
+
+    
+    
     /*
     // MARK: - Navigation
 
@@ -81,4 +107,3 @@ class DetailViewController2: UIViewController {
     */
 
 
-}

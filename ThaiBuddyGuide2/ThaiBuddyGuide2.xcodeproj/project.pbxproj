@@ -26,6 +26,8 @@
 		B4C3A0E61A22990F00A96225 /* bild-04@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C3A0E01A22990F00A96225 /* bild-04@2x.jpg */; };
 		B4C3A0E71A22990F00A96225 /* bild-05@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C3A0E11A22990F00A96225 /* bild-05@2x.jpg */; };
 		B4C3A0E81A22990F00A96225 /* bild-06@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C3A0E21A22990F00A96225 /* bild-06@2x.jpg */; };
+		B4D1F8271A2399CB00D5B3B4 /* WebVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D1F8261A2399CB00D5B3B4 /* WebVideoViewController.swift */; };
+		B4D1F8291A23AE6000D5B3B4 /* test.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B4D1F8281A23AE6000D5B3B4 /* test.MOV */; };
 		B4D2CDF01A1FFE1200B02E7E /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDEF1A1FFE1200B02E7E /* ItemsViewController.swift */; };
 		B4D2CDF21A1FFE1800B02E7E /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDF11A1FFE1800B02E7E /* item.swift */; };
 		B4D2CDF61A1FFE2E00B02E7E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2CDF51A1FFE2E00B02E7E /* CustomCell.swift */; };
@@ -78,6 +80,8 @@
 		B4C3A0E01A22990F00A96225 /* bild-04@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bild-04@2x.jpg"; sourceTree = "<group>"; };
 		B4C3A0E11A22990F00A96225 /* bild-05@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bild-05@2x.jpg"; sourceTree = "<group>"; };
 		B4C3A0E21A22990F00A96225 /* bild-06@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bild-06@2x.jpg"; sourceTree = "<group>"; };
+		B4D1F8261A2399CB00D5B3B4 /* WebVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebVideoViewController.swift; sourceTree = "<group>"; };
+		B4D1F8281A23AE6000D5B3B4 /* test.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = test.MOV; sourceTree = "<group>"; };
 		B4D2CDEF1A1FFE1200B02E7E /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController.swift; path = ThaiBuddyGuide2/ItemsViewController.swift; sourceTree = "<group>"; };
 		B4D2CDF11A1FFE1800B02E7E /* item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = item.swift; path = ThaiBuddyGuide2/item.swift; sourceTree = "<group>"; };
 		B4D2CDF51A1FFE2E00B02E7E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 		B446ADF61A1A8B2E007F3CD7 = {
 			isa = PBXGroup;
 			children = (
+				B4D1F8261A2399CB00D5B3B4 /* WebVideoViewController.swift */,
 				B4B5D37E1A1C893E00DEAD0F /* AVFoundation.framework */,
 				B4B5D3791A1C839800DEAD0F /* MapKit.framework */,
 				B446AE011A1A8B2E007F3CD7 /* ThaiBuddyGuide2 */,
@@ -156,6 +161,7 @@
 				B4C3A0DC1A2298CC00A96225 /* moreVCimages */,
 				B4B5D3801A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 */,
 				B446AE0B1A1A8B2E007F3CD7 /* Images.xcassets */,
+				B4D1F8281A23AE6000D5B3B4 /* test.MOV */,
 				B446AE0D1A1A8B2E007F3CD7 /* LaunchScreen.xib */,
 				B4D2CDF91A1FFF5E00B02E7E /* f2@2x.jpg */,
 				B4D2CDFA1A1FFF5E00B02E7E /* f3@2x.jpg */,
@@ -345,6 +351,7 @@
 				B4D2CDFB1A1FFF5E00B02E7E /* f2@2x.jpg in Resources */,
 				B446AE2D1A1A92C8007F3CD7 /* wat2.jpeg in Resources */,
 				B446AE0F1A1A8B2E007F3CD7 /* LaunchScreen.xib in Resources */,
+				B4D1F8291A23AE6000D5B3B4 /* test.MOV in Resources */,
 				B4D2CDFE1A2009F000B02E7E /* Main.storyboard in Resources */,
 				B446AE0C1A1A8B2E007F3CD7 /* Images.xcassets in Resources */,
 				B4C3A0E31A22990F00A96225 /* bild-01@2x.jpg in Resources */,
@@ -372,6 +379,7 @@
 				B4E3E6A41A1B51E600E84243 /* ItemsViewController2.swift in Sources */,
 				B4B5D3871A1CB50400DEAD0F /* audioVC.swift in Sources */,
 				B4D2CDF61A1FFE2E00B02E7E /* CustomCell.swift in Sources */,
+				B4D1F8271A2399CB00D5B3B4 /* WebVideoViewController.swift in Sources */,
 				B4D2CDF21A1FFE1800B02E7E /* item.swift in Sources */,
 				B4E3E6A31A1B51E600E84243 /* item2.swift in Sources */,
 				B4E3E6A11A1B51E600E84243 /* CustomCell2.swift in Sources */,
