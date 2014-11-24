@@ -434,15 +434,29 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9RG-Sb-aed">
-                                <rect key="frame" x="22" y="28" width="276" height="202"/>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7e-zU-zgm">
+                                <rect key="frame" x="22" y="279" width="250" height="188"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9RG-Sb-aed">
+                                <rect key="frame" x="30" y="50" width="250" height="188"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9RG-Sb-aed" secondAttribute="trailing" constant="20" id="VTk-pi-g40"/>
+                            <constraint firstItem="g7e-zU-zgm" firstAttribute="top" secondItem="9RG-Sb-aed" secondAttribute="bottom" constant="41" id="a4f-mK-Q9i"/>
+                            <constraint firstItem="g7e-zU-zgm" firstAttribute="leading" secondItem="FxP-Wl-vhf" secondAttribute="leading" constant="20" id="c3Q-NG-biS"/>
+                            <constraint firstItem="g7e-zU-zgm" firstAttribute="top" secondItem="9RG-Sb-aed" secondAttribute="bottom" constant="20" id="esS-WT-Auz"/>
+                            <constraint firstAttribute="trailing" secondItem="g7e-zU-zgm" secondAttribute="trailing" constant="20" id="jV2-i2-SmA"/>
+                            <constraint firstItem="9RG-Sb-aed" firstAttribute="leading" secondItem="FxP-Wl-vhf" secondAttribute="leading" constant="20" id="ryq-vI-Ok5"/>
+                            <constraint firstItem="9RG-Sb-aed" firstAttribute="top" secondItem="o0s-GQ-oih" secondAttribute="bottom" constant="20" id="zOw-B0-WeN"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="WebView" destination="9RG-Sb-aed" id="dWZ-FF-sA9"/>
+                        <outlet property="WebView2" destination="g7e-zU-zgm" id="fop-5o-WRE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M33-EB-CZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>

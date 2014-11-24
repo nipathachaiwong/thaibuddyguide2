@@ -10,7 +10,10 @@ import UIKit
 
 class WebVideoViewController: UIViewController {
     
-    var URLPath = "http://www.youtube.com/embed/Rva9ylPHi2w?rel=0&amp;controls=0&amp;showinfo=0"
+    //embed setting custom size 250 x 188
+    var URLPathGoThere = "http://www.youtube.com/embed/Rva9ylPHi2w?rel=0&amp;controls=0&amp;showinfo=0"
+    
+    var URLPathWhileThere = "http:///www.youtube.com/embed/nxM-rac7vb4?rel=0&amp;controls=0&amp;showinfo=0"
     
   
    
@@ -19,6 +22,8 @@ class WebVideoViewController: UIViewController {
     
     @IBOutlet weak var WebView: UIWebView!
 
+    @IBOutlet weak var WebView2: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -36,9 +41,13 @@ class WebVideoViewController: UIViewController {
     
     
     func loadAddressURL() {
-        let requestURL = NSURL(string:URLPath)
+        let requestURL = NSURL(string:URLPathGoThere)
+        let requestURL2 = NSURL(string:URLPathWhileThere)
+
         let request = NSURLRequest(URL: requestURL);
+        let request2 = NSURLRequest(URL: requestURL2);
         WebView.loadRequest(request)
+        WebView2.loadRequest(request2)
     }
     
 

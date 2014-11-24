@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8rm-jc-e06">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Vck-ef-RPp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -230,6 +230,10 @@
                                 <state key="normal" title="More Photos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="morePhotoButton:" destination="tXA-Ko-xF8" eventType="touchUpInside" id="K5s-TN-vaV"/>
+                                    <segue destination="6z0-hP-bZo" kind="modal" identifier="MorePhotoSeque" id="jWt-hh-jH0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P13-c9-2Jh">
                                 <rect key="frame" x="24" y="416" width="65" height="32"/>
@@ -237,10 +241,11 @@
                                 <state key="normal" title="Go there">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="goTherebutton:" destination="tXA-Ko-xF8" eventType="touchUpInside" id="kIP-LD-3c4"/>
+                                    <segue destination="8rm-jc-e06" kind="modal" identifier="goToSque" id="hf6-iS-Jh1"/>
+                                </connections>
                             </button>
-                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P58-c2-1Qm">
-                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
-                            </adBannerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzK-LK-WqE">
                                 <rect key="frame" x="188" y="469" width="116" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -251,7 +256,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwM-bf-snJ">
                                 <rect key="frame" x="24" y="467" width="86" height="32"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Add to Likes">
+                                <state key="normal" title="Save this">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -289,10 +294,10 @@
             </objects>
             <point key="canvasLocation" x="-1481" y="1708"/>
         </scene>
-        <!--Map1-->
+        <!--GoThereVC-->
         <scene sceneID="hzI-DW-TO6">
             <objects>
-                <viewController storyboardIdentifier="MapViewController1" title="Map1" id="8rm-jc-e06" customClass="MapViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController1" title="GoThereVC" id="8rm-jc-e06" customClass="MapViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fbr-yc-tun"/>
                         <viewControllerLayoutGuide type="bottom" id="QNq-GH-IoN"/>
@@ -301,50 +306,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rET-Yo-hrN">
-                                <rect key="frame" x="0.0" y="153" width="320" height="365"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rET-Yo-hrN">
+                                <rect key="frame" x="30" y="153" width="260" height="387"/>
                                 <connections>
                                     <outlet property="delegate" destination="8rm-jc-e06" id="gtL-KX-uu0"/>
                                 </connections>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Ss-2i-DzU">
-                                <rect key="frame" x="150" y="0.0" width="165" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sed-nM-QYe">
-                                <rect key="frame" x="9" y="11" width="133" height="94"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thai" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNo-sp-eCX">
-                                <rect key="frame" x="150" y="41" width="154" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8N4-oB-Jki">
-                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
-                            </adBannerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EO4-0c-Mve">
-                                <rect key="frame" x="156" y="81" width="142" height="52"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Say Directions">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWG-Vb-WBI">
+                                <rect key="frame" x="113" y="76" width="59" height="30"/>
+                                <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playButton:" destination="8rm-jc-e06" eventType="touchUpInside" id="KX9-NV-uQF"/>
+                                    <action selector="callSound:" destination="8rm-jc-e06" eventType="touchUpInside" id="wvK-KF-pbC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2P-lz-CAw">
+                                <rect key="frame" x="87" y="28" width="110" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LIx-03-bkn"/>
                     <connections>
                         <outlet property="mappy" destination="rET-Yo-hrN" id="gAC-fo-fRT"/>
+                        <outlet property="nameLabel" destination="f2P-lz-CAw" id="y9l-xx-Jdi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOM-HH-vcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-946" y="2328"/>
+            <point key="canvasLocation" x="-1868" y="1708"/>
         </scene>
         <!--detailscrollview-->
         <scene sceneID="uMJ-Ax-p1e">
@@ -396,34 +390,86 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
             </objects>
             <point key="canvasLocation" x="-289" y="1797"/>
         </scene>
-        <!--AudioVC-->
-        <scene sceneID="Z1e-cI-XQW">
+        <!--More Photos-->
+        <scene sceneID="CFd-co-poW">
             <objects>
-                <viewController id="9eI-Gf-qcS" customClass="audioVC" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="More Photos" id="6z0-hP-bZo" customClass="MorePhotosViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1GB-hk-ev8"/>
-                        <viewControllerLayoutGuide type="bottom" id="No8-N6-Wvn"/>
+                        <viewControllerLayoutGuide type="top" id="8oM-ek-vif"/>
+                        <viewControllerLayoutGuide type="bottom" id="vnT-vB-n1n"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="w7s-3y-L4k">
+                    <view key="view" contentMode="scaleToFill" id="FwF-VA-bKi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMn-Jw-b7F">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xMn-Jw-b7F" firstAttribute="top" secondItem="FwF-VA-bKi" secondAttribute="top" id="0d5-cD-T8F"/>
+                            <constraint firstAttribute="trailing" secondItem="xMn-Jw-b7F" secondAttribute="trailing" id="CYC-ty-LLo"/>
+                            <constraint firstItem="vnT-vB-n1n" firstAttribute="top" secondItem="xMn-Jw-b7F" secondAttribute="bottom" id="Wek-Gh-d4D"/>
+                            <constraint firstItem="xMn-Jw-b7F" firstAttribute="leading" secondItem="FwF-VA-bKi" secondAttribute="leading" id="Wkw-zo-1sa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="xMn-Jw-b7F" id="p0J-Pm-1Gc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xKd-R8-cSE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1848" y="2425"/>
+        </scene>
+        <!--Web Video View Controller-->
+        <scene sceneID="crL-kz-sqY">
+            <objects>
+                <viewController id="Vck-ef-RPp" customClass="WebVideoViewController" customModule="ThaiBuddyGuide2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o0s-GQ-oih"/>
+                        <viewControllerLayoutGuide type="bottom" id="T3T-rT-w8f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FxP-Wl-vhf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smb-W4-tZu">
-                                <rect key="frame" x="58" y="45" width="214" height="89"/>
-                                <state key="normal" title="play sound">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playButton:" destination="9eI-Gf-qcS" eventType="touchUpInside" id="SFu-t5-fCj"/>
-                                </connections>
-                            </button>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7e-zU-zgm">
+                                <rect key="frame" x="22" y="279" width="250" height="188"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9RG-Sb-aed">
+                                <rect key="frame" x="30" y="50" width="250" height="188"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9RG-Sb-aed" secondAttribute="trailing" constant="20" id="VTk-pi-g40"/>
+                            <constraint firstItem="g7e-zU-zgm" firstAttribute="top" secondItem="9RG-Sb-aed" secondAttribute="bottom" constant="41" id="a4f-mK-Q9i"/>
+                            <constraint firstItem="g7e-zU-zgm" firstAttribute="leading" secondItem="FxP-Wl-vhf" secondAttribute="leading" constant="20" id="c3Q-NG-biS"/>
+                            <constraint firstItem="g7e-zU-zgm" firstAttribute="top" secondItem="9RG-Sb-aed" secondAttribute="bottom" constant="20" id="esS-WT-Auz"/>
+                            <constraint firstAttribute="trailing" secondItem="g7e-zU-zgm" secondAttribute="trailing" constant="20" id="jV2-i2-SmA"/>
+                            <constraint firstItem="9RG-Sb-aed" firstAttribute="leading" secondItem="FxP-Wl-vhf" secondAttribute="leading" constant="20" id="ryq-vI-Ok5"/>
+                            <constraint firstItem="9RG-Sb-aed" firstAttribute="top" secondItem="o0s-GQ-oih" secondAttribute="bottom" constant="20" id="zOw-B0-WeN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="WebView" destination="9RG-Sb-aed" id="dWZ-FF-sA9"/>
+                        <outlet property="WebView2" destination="g7e-zU-zgm" id="fop-5o-WRE"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lzS-hJ-sdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M33-EB-CZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1491" y="2359"/>
+            <point key="canvasLocation" x="-1230" y="2821"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="COo-LM-1F8">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="E7d-a5-ytc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pP0-yJ-uNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-800" y="2813"/>
         </scene>
     </scenes>
     <resources>
