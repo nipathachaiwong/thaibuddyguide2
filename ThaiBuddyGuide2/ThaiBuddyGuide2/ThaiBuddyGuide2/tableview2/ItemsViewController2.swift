@@ -109,7 +109,7 @@ class ItemsViewController2: UIViewController, UITableViewDataSource,UITableViewD
         
         detailedViewController.itemString = item.name
         detailedViewController.myDetailedImageName = item.imageName
-        detailedViewController.desciptionString = item.description
+        detailedViewController.desciptionDetail = item.description
         
         self.presentViewController(detailedViewController, animated: true, completion: nil)
         

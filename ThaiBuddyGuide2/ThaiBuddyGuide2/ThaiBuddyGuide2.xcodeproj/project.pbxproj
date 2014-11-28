@@ -19,6 +19,7 @@
 		B4B5D37F1A1C893E00DEAD0F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B5D37E1A1C893E00DEAD0F /* AVFoundation.framework */; };
 		B4B5D3811A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B4B5D3801A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 */; };
 		B4B5D3871A1CB50400DEAD0F /* audioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B5D3861A1CB50400DEAD0F /* audioVC.swift */; };
+		B4BC1DAB1A28EEC6008F0A7F /* DetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BC1DAA1A28EEC6008F0A7F /* DetailViewController2.swift */; };
 		B4C3A0DB1A2297B700A96225 /* MorePhotosViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C3A0DA1A2297B700A96225 /* MorePhotosViewController .swift */; };
 		B4C3A0E31A22990F00A96225 /* bild-01@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C3A0DD1A22990F00A96225 /* bild-01@2x.jpg */; };
 		B4C3A0E41A22990F00A96225 /* bild-02@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4C3A0DE1A22990F00A96225 /* bild-02@2x.jpg */; };
@@ -40,7 +41,6 @@
 		B4E3E68C1A1B3D0400E84243 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E68B1A1B3D0400E84243 /* MyMenuTableViewController.swift */; };
 		B4E3E68E1A1B3E9900E84243 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = B4E3E68D1A1B3E9900E84243 /* image.png */; };
 		B4E3E6A11A1B51E600E84243 /* CustomCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E69D1A1B51E600E84243 /* CustomCell2.swift */; };
-		B4E3E6A21A1B51E600E84243 /* DetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E69E1A1B51E600E84243 /* DetailViewController2.swift */; };
 		B4E3E6A31A1B51E600E84243 /* item2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E69F1A1B51E600E84243 /* item2.swift */; };
 		B4E3E6A41A1B51E600E84243 /* ItemsViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3E6A01A1B51E600E84243 /* ItemsViewController2.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +72,7 @@
 		B4B5D37E1A1C893E00DEAD0F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B4B5D3801A1C8A3F00DEAD0F /* testfordirectionaduio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testfordirectionaduio.mp3; sourceTree = "<group>"; };
 		B4B5D3861A1CB50400DEAD0F /* audioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = audioVC.swift; path = ../audioVC.swift; sourceTree = "<group>"; };
+		B4BC1DAA1A28EEC6008F0A7F /* DetailViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController2.swift; sourceTree = "<group>"; };
 		B4C3A0DA1A2297B700A96225 /* MorePhotosViewController .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MorePhotosViewController .swift"; sourceTree = "<group>"; };
 		B4C3A0DD1A22990F00A96225 /* bild-01@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bild-01@2x.jpg"; sourceTree = "<group>"; };
 		B4C3A0DE1A22990F00A96225 /* bild-02@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bild-02@2x.jpg"; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		B4E3E68B1A1B3D0400E84243 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMenuTableViewController.swift; path = ../MyMenuTableViewController.swift; sourceTree = "<group>"; };
 		B4E3E68D1A1B3E9900E84243 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		B4E3E69D1A1B51E600E84243 /* CustomCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomCell2.swift; path = tableview2/CustomCell2.swift; sourceTree = "<group>"; };
-		B4E3E69E1A1B51E600E84243 /* DetailViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController2.swift; path = tableview2/DetailViewController2.swift; sourceTree = "<group>"; };
 		B4E3E69F1A1B51E600E84243 /* item2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = item2.swift; path = tableview2/item2.swift; sourceTree = "<group>"; };
 		B4E3E6A01A1B51E600E84243 /* ItemsViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewController2.swift; path = tableview2/ItemsViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -253,8 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				B4E3E69D1A1B51E600E84243 /* CustomCell2.swift */,
-				B4E3E69E1A1B51E600E84243 /* DetailViewController2.swift */,
 				B4E3E69F1A1B51E600E84243 /* item2.swift */,
+				B4BC1DAA1A28EEC6008F0A7F /* DetailViewController2.swift */,
 				B4E3E6A01A1B51E600E84243 /* ItemsViewController2.swift */,
 			);
 			name = "tableview Restaurants";
@@ -372,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BC1DAB1A28EEC6008F0A7F /* DetailViewController2.swift in Sources */,
 				B4E3E6A41A1B51E600E84243 /* ItemsViewController2.swift in Sources */,
 				B4B5D3871A1CB50400DEAD0F /* audioVC.swift in Sources */,
 				B4D2CDF61A1FFE2E00B02E7E /* CustomCell.swift in Sources */,
@@ -385,7 +386,6 @@
 				B446AE071A1A8B2E007F3CD7 /* ViewController.swift in Sources */,
 				B4E3E68C1A1B3D0400E84243 /* MyMenuTableViewController.swift in Sources */,
 				B4D2CDF01A1FFE1200B02E7E /* ItemsViewController.swift in Sources */,
-				B4E3E6A21A1B51E600E84243 /* DetailViewController2.swift in Sources */,
 				B4E3E6871A1B3A9800E84243 /* ENSideMenuNavigationController.swift in Sources */,
 				B4C3A0DB1A2297B700A96225 /* MorePhotosViewController .swift in Sources */,
 				B4B5D3781A1C829100DEAD0F /* MapViewController.swift in Sources */,
